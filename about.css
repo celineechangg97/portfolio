@@ -1,0 +1,270 @@
+body{
+    background-color: #FFD8D5;
+    margin:0;
+    margin-top: -20px;
+    padding-bottom:20px;
+    padding-top: 20px;
+    padding-right:20px;
+}
+
+p{
+    margin: 0;
+}
+
+.header{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 20px;
+    position:fixed;
+    left:0;
+    right:0;
+    background-color: #FFD8D5;
+    z-index:100;
+}
+
+
+.header-content{
+    margin-right: 20px;
+    font-family: 'Delicious Handrawn', sans-serif;
+    font-size: 20px;
+    color: #2D2D2D;
+    text-decoration: none;
+}
+
+.header-content:hover{
+    color: #FF046D;
+}
+
+
+.wave{
+    position: fixed;
+    width:100%;
+    bottom:-300px;
+    z-index:-10;
+}
+
+
+
+
+
+
+/* set initial state of elements with this class*/
+.fade-in{
+    opacity:0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* final state after the animation*/
+.fade-in.visible{
+    opacity:1;
+    transform: translateY(0);
+}
+
+
+
+
+.top-wave{
+    width:100%;
+    position: fixed;
+}
+
+
+.container{
+    margin-top: 120px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.less-margin{
+    margin-top: 0px;
+}
+
+.about-image{
+    flex:1;
+}
+
+.about-desc{
+    flex:1;
+}
+
+
+.me{
+    width:500px;
+    margin-top: 90px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.nori{
+    width:700px;
+    margin-top: 90px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.section-title{
+    font-family: 'Delicious Handrawn', sans-serif;
+    color: #FF046D;
+    font-size: 50px;
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+.section-desc{
+    font-family:'open sans';
+    font-size: 20px;
+    max-width: 700px;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.crochet{
+    margin-top:100px;
+}
+
+.crochet-row1{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+}
+
+.crochet-row2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 50px;
+}
+
+.crochet-row3{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.giraffe{
+    height:300px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.flowers{
+    height:300px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.pillow{
+    height:300px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.skirt{
+    height:350px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.tissue{
+    height:300px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.bag{
+    height:300px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.icecream{
+    height:300px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.copyright{
+    text-align: center;
+    font-family: 'Borel';
+    margin-top:300px;
+    font-size:14px;
+}
+
+
+
+
+
+
+/* breakpoints */
+@media (max-width: 1200px) {
+    
+    .container{
+        flex-direction: column;
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width: 1200px){
+    .wave{
+        bottom:-200px;
+    }
+}
+
+@media (max-width: 760px) {
+    .crochet-row1,
+    .crochet-row2,
+    .crochet-row3{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1200px) {    
+    .giraffe{
+        height: 380px;
+        margin-right:50px;
+    }
+
+    .flowers{
+        height: 380px;
+        margin-left:50px;
+    }
+    
+    .pillow{
+        height: 380px;
+        margin-right:0;
+    }
+    
+    .skirt{
+        height:400px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    .tissue{
+        height: 380px;
+        margin-left:0;
+    }
+    
+    .bag{
+        height: 380px;
+        margin-right:50px;
+    }
+    
+    .icecream{
+        height: 380px;
+        margin-left:50px;
+    }
+}
+

@@ -1,0 +1,29 @@
+.body{
+    margin:0;
+}
+
+.header{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 20px;
+    position:fixed;
+    left:0;
+    right:0;
+    background-color: #FFD8D5;
+    z-index:100;
+}
+
+
+.header-content{
+    margin-right: 20px;
+    font-family: 'Delicious Handrawn', sans-serif;
+    font-size: 20px;
+    color: #2D2D2D;
+    text-decoration: none;
+}
+
+.header-content:hover{
+    color: #FF046D;
+}
