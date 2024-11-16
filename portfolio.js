@@ -22,3 +22,42 @@ window.addEventListener("load", function() {
  document.addEventListener('scroll', () => {
    document.documentElement.style.setProperty('--scrollY', window.scrollY);
 });
+
+/*
+const correctPassword = "chang123";
+
+    function checkPassword() {
+      const passwordInput = document.getElementById('password').value;
+      const errorMessage = document.getElementById('error-message');
+      
+      if (passwordInput === correctPassword) {
+        // Redirect to the protected page
+        window.location.href = "index.html";
+      } else {
+        // Show error message
+        errorMessage.textContent = "Incorrect password. Please try again.";
+      }
+    }
+      */
+
+    const correctPassword = "chang123";
+
+    function checkPassword() {
+      const passwordInput = document.getElementById('password').value;
+      const errorMessage = document.getElementById('error-message');
+      const container = document.getElementById('password-container');
+
+      if (passwordInput === correctPassword) {
+        // Redirect to the protected page
+        window.location.href = "index.html";
+      } else {
+        // Add shake animation
+        errorMessage.textContent = "Incorrect password. Please try again.";
+        container.classList.add('shake');
+
+        // Remove the shake class after the animation duration
+        setTimeout(() => {
+          container.classList.remove('shake');
+        }, 500); // Match animation-duration in CSS
+      }
+    }
